@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class SecondMaxArray{
 public static void main(String [] args){
 	int[] num  = {23,45,67,89,32};
@@ -11,6 +12,10 @@ public static void main(String [] args){
 		smax= num[i];	
 		}
 	}
+	System.out.println("Before sorting: "+Arrays.toString(num));
+	Arrays.sort(num);
+	System.out.println("After sorting: "+Arrays.toString(num));
+
 	System.out.println("max value is: " + max);
 	System.out.println("second max value is: " + smax);
 }

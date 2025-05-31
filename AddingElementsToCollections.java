@@ -13,7 +13,7 @@ public static void main(String [] args){
 	list2.add("Gobi");
 	list2.add("Devi");
 	
-	
+	test();
 	Collections.addAll(list1, "Devi" , "Gobi" , "Rose");
 	System.out.println(list1.contains("Rose"));
 	
@@ -29,6 +29,15 @@ public static void main(String [] args){
 	 System.out.println("List one After remove: " + list1);
 	
 	System.out.println("list1 contains all the element in list2: " + list1.containsAll(list2));
+}
+
+
+public static void test(String [] args){
+	List<String> list1= new ArrayList<String>();
+	list1.add("Aishu");
+	list1.add("Sri");
+	list1.add("Kavi");
+	
 }
 
 }
